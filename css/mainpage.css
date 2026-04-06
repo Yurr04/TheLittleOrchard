@@ -29,10 +29,15 @@ body {
   box-shadow: 0 8px 18px rgba(69, 93, 48, 0.18);
 }
 
+.fields-panel,
+.status-box,
+.left-box {
+  left: 3vw;
+}
+
 .fields-panel {
   position: absolute;
-  top: 3vh;
-  left: 3vw;
+  top: 11vh;
   width: 52vw;
   min-height: 24vh;
   background: #ffffff;
@@ -67,6 +72,7 @@ body {
   max-height: 90px;
   object-fit: contain;
   display: block;
+  transition: transform 0.2s ease, filter 0.2s ease;
 }
 
 .field-overlay {
@@ -91,10 +97,6 @@ body {
 .field-card:hover .field-base {
   transform: translateY(-2px);
   filter: drop-shadow(0 8px 18px rgba(69, 93, 48, 0.18));
-}
-
-.field-base {
-  transition: transform 0.2s ease, filter 0.2s ease;
 }
 
 .timeline-section {
@@ -148,34 +150,20 @@ body {
 
 .tree-panel {
   position: absolute;
-  top: 3vh;
-  right: 4vw;
-  width: 20vw;
-  height: 78vh;
+  top: 11vh;
+  right: 1vw;
+  width: 43vw;
+  height: 80vh;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
   z-index: 4;
 }
 
-.tree-crown {
-  position: relative;
-  width: 70%;
-  height: 45%;
-  margin: 0 auto;
-  background: #eef8ea;
-  border: 2px solid #b8cfa8;
-  border-radius: 42% 38% 40% 45% / 35% 40% 45% 42%;
-  overflow: hidden;
-}
-
-.tree-trunk {
-  width: 28%;
-  height: 42%;
-  margin: 0 auto;
-  background: linear-gradient(to bottom, #8b6a46, #6f5437);
-  border-radius: 0 0 18px 18px;
-}
-#treeSvg {
+.tree-svg {
   width: 100%;
   height: 100%;
+  object-fit: contain;
   display: block;
 }
 
@@ -183,7 +171,7 @@ body {
   position: absolute;
   bottom: 4vh;
   width: 16vw;
-  min-height: 14vh;
+  min-height: 20vh;
   background: #ffffff;
   border: 2px solid #b8cfa8;
   border-radius: 24px;
@@ -192,11 +180,13 @@ body {
 }
 
 .left-box {
-  left: 4vw;
+  position: absolute;
 }
 
 .right-box {
-  left: 32vw;
+  position: absolute;
+  bottom: 4vh;
+  right: 45vw;
 }
 
 .bottom-box h3 {
@@ -215,7 +205,6 @@ body {
 .status-box {
   position: absolute;
   top: 38vh;
-  left: 4vw;
   width: 18vw;
   min-height: 12vh;
   background: rgba(255, 255, 255, 0.96);
@@ -236,4 +225,22 @@ body {
   margin: 0;
   line-height: 1.45;
   color: #607154;
+}
+
+.top-banner {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 94px;
+  background-color: #455D30;
+  z-index: 1;
+}
+
+.bottom-grass {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  z-index: 1;
 }
