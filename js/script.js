@@ -35,7 +35,7 @@ fieldCards.forEach((card, index) => {
   });
 });
 
-/* Appels */
+/* D3 tree apples */
 const apples = [
   { id: 1, name: "Apple 1", x: 100,  y: 80,  color: "#d62828", type: "Placeholder red apple" },
   { id: 2, name: "Apple 2", x: 200, y: 105, color: "#d62828", type: "Placeholder red apple" },

@@ -1,72 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Appelboom Main Page</title>
-  <link rel="stylesheet" href="css/style.css" />
-  <script src="https://d3js.org/d3.v7.min.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;1,700&display=swap" rel="stylesheet">
+    <link rel="icon" href="img/icon.png">
+    <title>The Little Orchard</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-  <main class="dashboard">
-
-    <!-- Akker velden -->
-    <section class="fields-panel">
-      <div class="fields-grid">
-        <div class="field-card interactive" data-field="Akker 1">Akker 1</div>
-        <div class="field-card interactive" data-field="Akker 2">Akker 2</div>
-        <div class="field-card interactive" data-field="Akker 3">Akker 3</div>
-        <div class="field-card interactive" data-field="Akker 4">Akker 4</div>
-        <div class="field-card interactive" data-field="Akker 5">Akker 5</div>
-        <div class="field-card interactive" data-field="Akker 6">Akker 6</div>
-      </div>
-
-      <div class="timeline-section">
-        <div class="year-labels">
-          <span>2010</span>
-          <span id="currentYear">2017</span>
-          <span>2017</span>
+    <section id="welcome">
+        <div id="home">
+            <h1>The Little</h1>
+            <h1 class="orchard">Orchard!</h1>
+            <p class="subtitle">Appels zo fijn, die moeten wel van The Little Orchard zijn!</p>
         </div>
-
-        <input
-          type="range"
-          id="yearSlider"
-          min="2010"
-          max="2017"
-          step="1"
-          value="2017"
-        />
-      </div>
+        <img id="background" src="img/background.svg" alt="Achtergrond foto" draggable="false">
     </section>
 
-    <!-- Boom -->
-    <section class="tree-panel">
-      <div class="tree-crown">
-        <svg id="treeSvg" viewBox="0 0 260 340"></svg>
-      </div>
-      <div class="tree-trunk"></div>
+    <section id="goedele">
+        <div id="goedele-text">
+            <p class="label">OVER DE EIGENARESSE</p>
+            <h2>Goedele Peer</h2>
+            <p>Goedele is de derde generatie fruittelster in haar familie. Ze nam het bedrijf over van haar vader, die het op zijn beurt van zijn moeder had geërfd. Ze stuurt bewust op data: welk ras levert het meeste op, welk perceel presteert het best, om slimme keuzes te maken over de toekomst van The Little Orchard.</p>
+        </div>
+        <div id="goedele-img">
+            <img src="img/goedele.svg" alt="Goedele Peer" draggable="false">
+        </div>
+        <div id="goedele-extra">
+            <blockquote>"Je kunt geen appels met peren vergelijken maar ik doe het toch, want dat is precies wat de toekomst van The Little Orchard nodig heeft."</blockquote>
+            <div id="goedele-stats">
+                <div class="stat">
+                    <span class="stat-number">3e</span>
+                    <span class="stat-label">generatie fruittelster</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-number">3</span>
+                    <span class="stat-label">nieuwe rassen ontwikkeld</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-number">6</span>
+                    <span class="stat-label">percelen onder beheer</span>
+                </div>
+            </div>
+        </div>
     </section>
 
-
-    <!-- Info box links / rechts onder -->
-    <section class="bottom-box left-box interactive" id="leftInfoBox">
-      <h3>Left info box</h3>
-      <p>Information Left info panel.</p>
+    <section id="about">
+        <img id="about-bg" src="img/barn.svg" alt="The Little Orchard"  draggable="false">
+        <div id="about-text">
+            <p class="label">Over het bedrijf</p>
+            <h2>The Little Orchard</h2>
+            <p>Het begon in de jaren '60 met een handvol appelbomen en een eenvoudig idee: goed fruit telen op goede grond. Wat klein begon, groeide generatie na generatie uit tot een volwaardig fruitteeltbedrijf met zes percelen, meerdere appelrassen en een jaarlijkse oogst van honderden tonnen fruit.</p>
+            <p>Vandaag produceert The Little Orchard rassen zoals Elstar, Junami, Golden en Joly-Red. Elk met hun eigen karakter, prijs en plek in de markt. Een deel van de oogst gaat direct naar de afzetmarkt, een ander deel gaat de koeling in voor later. Het doel is simpel: het beste fruit, zo slim mogelijk geteeld.</p>
+        </div>
     </section>
 
-    <section class="bottom-box right-box interactive" id="rightInfoBox">
-      <h3>Right info box</h3>
-      <p>Information Right info panel.</p>
+    <section id="visualisation">
+        <a href="mainpage.html" id="visualisation-btn">Bekijk de data →</a>
     </section>
-
-    <!-- Main info panel -->
-    <section class="status-box" id="statusBox">
-      <h2>Main panel</h2>
-      <p>Click op een item om te inspecteren</p>
-    </section>
-
-  </main>
-
-  <script src="js/script.js"></script>
+    <img src="img/grass.svg" id="grass" draggable="false">
 </body>
 </html>

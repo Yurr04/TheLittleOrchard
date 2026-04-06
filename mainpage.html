@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Apple Orchard Dashboard</title>
+  <link rel="stylesheet" href="css/mainpage.css" />
+  <script src="https://d3js.org/d3.v7.min.js"></script>
+</head>
+<body>
+  <main class="dashboard">
+    <section class="fields-panel">
+      <div class="fields-grid">
+        <div class="field-card interactive" data-field="1">
+          <img src="img/assets/perceel.svg" alt="Akker 1" class="field-base">
+          <div class="field-overlay">
+            <!-- hier komt boomdata -->
+          </div>
+          <span class="field-label">Akker 1</span>
+        </div>
+
+        <div class="field-card interactive" data-field="2">
+          <img src="img/assets/perceel.svg" alt="Akker 2" class="field-base">
+          <div class="field-overlay">
+            <!-- hier komt boomdata  -->
+          </div>
+          <span class="field-label">Akker 2</span>
+        </div>
+
+        <div class="field-card interactive" data-field="3">
+          <img src="img/assets/perceel.svg" alt="Akker 3" class="field-base">
+          <div class="field-overlay">
+            <!-- hier komt boomdata  -->
+          </div>
+          <span class="field-label">Akker 3</span>
+        </div>
+
+        <div class="field-card interactive" data-field="4">
+          <img src="img/assets/perceel.svg" alt="Akker 4" class="field-base">
+          <div class="field-overlay">
+            <!-- hier komt boomdata  -->
+          </div>
+          <span class="field-label">Akker 4</span>
+        </div>
+
+        <div class="field-card interactive" data-field="5">
+          <img src="img/assets/perceel.svg" alt="Akker 5" class="field-base">
+          <div class="field-overlay">
+            <!-- hier komt boomdata  -->
+          </div>
+          <span class="field-label">Akker 5</span>
+        </div>
+
+        <div class="field-card interactive" data-field="6">
+          <img src="img/assets/perceel.svg" alt="Akker 6" class="field-base">
+          <div class="field-overlay">
+            <!-- hier komt boomdata  -->
+          </div>
+          <span class="field-label">Akker 6</span>
+        </div>
+      </div>
+
+      <div class="timeline-section">
+        <div class="year-labels">
+          <span>2010</span>
+          <span id="currentYear">2017</span>
+          <span>2017</span>
+        </div>
+
+        <input
+          type="range"
+          id="yearSlider"
+          min="2010"
+          max="2017"
+          step="1"
+          value="2017"
+        />
+      </div>
+    </section>
+
+    <!-- Bomen -->
+    <section class="tree-panel">
+      <div class="tree-crown">
+        <svg id="treeSvg" viewBox="0 0 260 340"></svg>
+      </div>
+      <div class="tree-trunk"></div>
+    </section>
+
+
+    <!-- Info boxes links / rechts -->
+    <section class="bottom-box left-box interactive" id="leftInfoBox">
+      <h3>Left info box</h3>
+      <p>Information Left info panel.</p>
+    </section>
+
+    <section class="bottom-box right-box interactive" id="rightInfoBox">
+      <h3>Right info box</h3>
+      <p>Information Right info panel.</p>
+    </section>
+
+    <!-- Info paneel in het midden -->
+    <section class="status-box" id="statusBox">
+      <h2>Main panel</h2>
+      <p>Click op een item om te inspecteren</p>
+    </section>
+
+  </main>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
