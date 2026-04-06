@@ -39,7 +39,7 @@ body {
   position: absolute;
   top: 11vh;
   width: 52vw;
-  min-height: 24vh;
+  min-height: 30vh;
   background: #ffffff;
   border: 2px solid #b8cfa8;
   border-radius: 24px;
@@ -50,13 +50,13 @@ body {
 .fields-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 1.2rem 1.8rem;
+  gap: 2rem 1.8rem;
   margin-bottom: 2rem;
 }
 
 .field-card {
   position: relative;
-  min-height: 90px;
+  min-height: 120px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -203,15 +203,27 @@ body {
 }
 
 .status-box {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  transition: opacity 0.25s ease, visibility 0s linear 0.25s;
   position: absolute;
-  top: 38vh;
-  width: 18vw;
-  min-height: 12vh;
+  top: 43vh;
+  width: 52vw;
+  min-height: 30vh;
   background: rgba(255, 255, 255, 0.96);
   border: 2px solid #b8cfa8;
   border-radius: 20px;
   padding: 1rem;
   z-index: 5;
+}
+
+.status-box.is-visible{
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+
+  transition: opacity 0.25s ease;
 }
 
 .status-box h2 {
