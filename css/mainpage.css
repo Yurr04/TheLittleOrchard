@@ -187,9 +187,10 @@ body {
 
 .tree-panel {
   display: flex;
-  align-items: flex-start;
+  align-items: center;
   justify-content: center;
-  min-height: clamp(420px, 75vh, 900px);
+  min-height: auto;
+  align-self: start;
 }
 
 .tree-svg {
@@ -275,9 +276,11 @@ body {
   }
 
   .tree-svg {
-    max-width: 520px;
+    max-width: auto;
   }
 }
+
+
 
 @media (max-width: 700px) {
   .fields-grid {
