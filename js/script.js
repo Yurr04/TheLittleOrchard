@@ -136,12 +136,11 @@ async function OmzetBoom() {
                 </div>
               `;
 
-              // Use your global function!
               showStatusBox(d.data.ras, detailedInfo);
           })
           .on("mouseout", function() {
               d3.select(this).style("opacity", "1");
-              hideStatusBox(); // Use your global function!
+              hideStatusBox();
           });
         });
 
