@@ -35,7 +35,7 @@ body{
     position: absolute;
     right: 80px;
     bottom: 80px;
-    width: 1000px;
+    width: clamp(1000px, 55vw, 1400px);
     mask-image:
         linear-gradient(to left, transparent 0%, black 40%),
         linear-gradient(to bottom, transparent 0%, black 20%),

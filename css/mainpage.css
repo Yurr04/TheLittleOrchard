@@ -265,6 +265,30 @@ body {
   box-shadow: 0 8px 18px rgba(69, 93, 48, 0.18);
 }
 
+.metric-buttons {
+  display: flex;
+  gap: 8px;
+  justify-content: center;
+  margin-bottom: 12px;
+}
+
+.metric-btn {
+  padding: 6px 16px;
+  border: 2px solid #455D30;
+  border-radius: 20px;
+  background: transparent;
+  color: #455D30;
+  font-weight: 700;
+  cursor: pointer;
+  transition: background 0.2s, color 0.2s;
+}
+
+.metric-btn.active,
+.metric-btn:hover {
+  background: #455D30;
+  color: #fff;
+}
+
 @media (max-width: 1100px) {
   .dashboard-content {
     grid-template-columns: 1fr;

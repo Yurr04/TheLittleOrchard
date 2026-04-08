@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>The Little Orchard Dashboard</title>
   <link rel="stylesheet" href="css/mainpage.css" />
+  <link rel="icon" href="img/icon.png">
   <script src="https://d3js.org/d3.v7.min.js"></script>
 </head>
 <body>
@@ -100,6 +101,13 @@
         </div>
       </div>
 
+      <div class="tree-buttons">
+        <div class="metric-buttons">
+          <button class="metric-btn active" data-metric="omzet">Omzet</button>
+          <button class="metric-btn" data-metric="hoeveelheid (kg)">Hoeveelheid</button>
+          <button class="metric-btn" data-metric="prijs per kg">Prijs per kg</button>
+        </div>
+
         <section class="tree-panel">
           <div id="tree-container" style="position: relative; width: 100%; max-width: 700px; aspect-ratio: 1/1;">
             <img src="img/assets/boomstam.svg" alt="Boom" class="tree-svg" style="width: 100%; height: 100%; object-fit: contain;">
@@ -107,8 +115,6 @@
           </div>
         </section>
       </div>
-    
-
     <img src="img/grass.svg" alt="Grass decoration" class="bottom-grass">
   </main>
 
